@@ -242,7 +242,7 @@ a {
 }
 
 .btn-nav-container {
-  width: 110px;
+  width: 90px;
   height: 20px;
   cursor: pointer;
   z-index: 999;
@@ -2359,6 +2359,9 @@ a {
 @media only screen and (min-width: 1920px) {
   .container {
     max-width: 1600px;
+  }
+  .btn-nav-container {
+    width: 110px;
   }
   #header img {
     max-width: 100% !important;
