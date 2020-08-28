@@ -1,16 +1,4 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        navigation: true,
-        navigationPosition: 'right',
-        responsiveWidth: 1024,
-        autoScrolling: true,
-        scrollBar: true,
-        afterResponsive: function(isResponsive) {
-
-        },
-
-
-    });
 
 
     var ww = $(window).width();
@@ -135,4 +123,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 $(document).on('click', '.scroll', function() {
     fullpage_api.moveSectionDown();
+});
+var myFullpage = new fullpage('#fullpage', {
+    scrollBar: true,
+    navigation: true,
+    navigationPosition: 'right',
+
+    responsiveWidth: 1024,
+    afterResponsive: function(isResponsive) {
+
+    }
+
 });
