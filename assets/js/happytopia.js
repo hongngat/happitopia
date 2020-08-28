@@ -1,5 +1,14 @@
 $(document).ready(function() {
+    $('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        responsiveWidth: 1349,
+        autoScrolling: true,
+        scrollBar: true,
+        afterResponsive: function(isResponsive) {
 
+        },
+    });
 
     //methods
 
@@ -98,6 +107,8 @@ $(document).ready(function() {
     })
     wow.init();
 
+
+
 });
 
 
@@ -119,16 +130,8 @@ $(document).on('click', '#scroll', function() {
     fullpage_api.moveSectionDown();
 });
 
-var myFullpage = new fullpage('#fullpage', {
-    navigation: true,
-    navigationPosition: 'right',
-    scrollBar: true,
-    responsiveSlides: true,
-    responsiveWidth: 1023,
-    afterResponsive: function(isResponsive) {
-        if (isResponsive) {
-            $.fn.fullpage.setAutoScrolling(true);
-        }
-    }
 
-});
+
+var ww = ($window).width;
+console.log({ ww })
+    // fullpage_api.destroy('all');
