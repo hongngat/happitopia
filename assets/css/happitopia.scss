@@ -1391,6 +1391,12 @@
                 }
                 #openning_page {
                     height: 100vh !important;
+                    .bgr_openning_pahe {
+                        &::before {
+                            background-size: unset;
+                            background-position: bottom;
+                        }
+                    }
                     img {
                         height: 100%;
                     }
@@ -1744,6 +1750,12 @@
                 }
                 #openning_page {
                     height: 100vh !important;
+                    .bgr_openning_pahe {
+                        &::before {
+                            background-size: unset;
+                            background-position: bottom;
+                        }
+                    }
                     img {
                         height: 100%;
                     }

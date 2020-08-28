@@ -1646,6 +1646,10 @@ a {
   #openning_page {
     height: 100vh !important;
   }
+  #openning_page .bgr_openning_pahe::before {
+    background-size: unset;
+    background-position: bottom;
+  }
   #openning_page img {
     height: 100%;
   }
@@ -1949,6 +1953,10 @@ a {
   }
   #openning_page {
     height: 100vh !important;
+  }
+  #openning_page .bgr_openning_pahe::before {
+    background-size: unset;
+    background-position: bottom;
   }
   #openning_page img {
     height: 100%;
