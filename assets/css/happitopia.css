@@ -75,6 +75,10 @@ ul {
   color: #80868D;
 }
 
+.contact_sticky img {
+  width: 100%;
+}
+
 .contact_sticky h2 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -120,6 +124,7 @@ ul {
   height: 50px;
   width: 3px;
   background-color: #fff;
+  margin-top: 20px;
 }
 
 .scroll_page {
@@ -572,7 +577,7 @@ a {
 }
 
 .title h2 {
-  font-size: 80px;
+  font-size: 70px;
   line-height: 0.8em;
   letter-spacing: 30px;
   text-transform: uppercase;
@@ -2177,6 +2182,19 @@ a {
   .title h2 {
     font-size: 100px;
   }
+  .btn-nav-container {
+    width: 100px;
+  }
+  #header img {
+    max-width: 100% !important;
+  }
+  #header .open,
+  #header .close_navmenu {
+    font-size: 20px !important;
+  }
+  .float-nav ul li a {
+    font-size: 48px;
+  }
   #openning_page .content_openning_page h5 {
     font-size: 40px;
   }
@@ -2213,9 +2231,10 @@ a {
   }
   #experts .title h2 {
     margin: 0;
+    margin-bottom: 70px;
   }
   #experts .c-slider__frame {
-    height: 585px;
+    height: 460px;
   }
   #experts .c-slider__item {
     max-width: 298px;
@@ -2228,7 +2247,7 @@ a {
   }
   #experts .c-slider .scrollbar {
     width: 50%;
-    bottom: -30px;
+    bottom: -90px;
   }
   #courses .title h2 {
     margin-top: 0px;
@@ -2370,6 +2389,9 @@ a {
   #header .close_navmenu {
     font-size: 20px !important;
   }
+  .float-nav ul li a {
+    font-size: 48px;
+  }
   .title h2 {
     font-size: 100px;
   }
@@ -2409,9 +2431,10 @@ a {
   }
   #experts .title h2 {
     margin: 0;
+    margin-bottom: 90px;
   }
   #experts .c-slider__frame {
-    height: 658px;
+    height: 480px;
   }
   #experts .c-slider__item {
     max-width: 314px;
@@ -2425,7 +2448,7 @@ a {
   }
   #experts .c-slider .scrollbar {
     width: 30%;
-    bottom: -95px;
+    bottom: -160px;
   }
   #courses .title h2 {
     margin-top: 0px;

@@ -63,6 +63,9 @@
                 bottom: 6%;
                 z-index: 99999;
                 color: #80868D;
+                img {
+                    width: 100%;
+                }
                 h2 {
                     transform: rotate(90deg);
                     margin: 0;
@@ -94,6 +97,7 @@
                 height: 50px;
                 width: 3px;
                 background-color: #fff;
+                margin-top: 20px;
             }
             
             .scroll_page {
@@ -474,7 +478,7 @@
             
             .title {
                 h2 {
-                    font-size: 80px;
+                    font-size: 70px;
                     line-height: 0.8em;
                     letter-spacing: 30px;
                     text-transform: uppercase;
@@ -2014,6 +2018,21 @@
                         font-size: 100px;
                     }
                 }
+                .btn-nav-container {
+                    width: 100px;
+                }
+                #header {
+                    img {
+                        max-width: 100% !important;
+                    }
+                    .open,
+                    .close_navmenu {
+                        font-size: 20px !important;
+                    }
+                }
+                .float-nav ul li a {
+                    font-size: 48px;
+                }
                 #openning_page {
                     .content_openning_page {
                         h5 {
@@ -2064,11 +2083,12 @@
                     .title {
                         h2 {
                             margin: 0;
+                            margin-bottom: 70px;
                         }
                     }
                     .c-slider {
                         &__frame {
-                            height: 585px;
+                            height: 460px;
                         }
                         &__item {
                             max-width: 298px;
@@ -2081,7 +2101,7 @@
                         }
                         .scrollbar {
                             width: 50%;
-                            bottom: -30px;
+                            bottom: -90px;
                         }
                     }
                 }
@@ -2276,6 +2296,9 @@
                         font-size: 20px !important;
                     }
                 }
+                .float-nav ul li a {
+                    font-size: 48px;
+                }
                 .title {
                     h2 {
                         font-size: 100px;
@@ -2331,11 +2354,12 @@
                     .title {
                         h2 {
                             margin: 0;
+                            margin-bottom: 90px;
                         }
                     }
                     .c-slider {
                         &__frame {
-                            height: 658px;
+                            height: 480px;
                         }
                         &__item {
                             max-width: 314px;
@@ -2349,7 +2373,7 @@
                         }
                         .scrollbar {
                             width: 30%;
-                            bottom: -95px;
+                            bottom: -160px;
                         }
                     }
                 }
