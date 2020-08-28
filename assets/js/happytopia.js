@@ -8,6 +8,8 @@ $(document).ready(function() {
         afterResponsive: function(isResponsive) {
 
         },
+
+
     });
 
 
@@ -131,6 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
-$(document).on('click', '#scroll', function() {
+$(document).on('click', '.scroll', function() {
     fullpage_api.moveSectionDown();
 });
