@@ -974,12 +974,6 @@
                 width: 100%;
                 height: 100vh;
                 position: relative;
-                .img_incubator_mobile {
-                    display: none;
-                }
-                .img_incubator_desktop {
-                    display: block;
-                }
                 .col-lg-4 {
                     img {
                         width: 50%;
@@ -995,11 +989,24 @@
                 .col-lg-8 {
                     position: relative;
                     img {
-                        width: 70%;
-                        opacity: .7;
+                        width: 100%;
                     }
                     .img_incubator {
+                        width: 30%;
                         position: absolute;
+                        div {
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background-color: #000000;
+                                opacity: .3;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                     }
                     .img_incubator1 {
                         top: 50%;
@@ -1008,16 +1015,16 @@
                     }
                     .img_incubator3 {
                         top: 10%;
-                        right: -15%;
+                        right: -7%;
                     }
                     .img_incubator2 {
                         top: 0;
-                        left: 50%;
-                        transform: translateX(-7%);
+                        left: 43%;
                     }
                     .img_incubator4 {
-                        left: 50%;
+                        left: 43%;
                         top: 55%;
+                        width: 38%;
                     }
                 }
             }
@@ -1494,28 +1501,26 @@
                     }
                 }
                 #incubator {
-                    .img_incubator_mobile {
-                        display: block;
+                    .img_incubator {
+                        position: relative !important;
+                        width: 100% !important;
+                        padding: 0;
                     }
-                    .img_incubator_desktop {
-                        display: none;
+                    .img_incubator1,
+                    .img_incubator2,
+                    .img_incubator3,
+                    .img_incubator4 {
+                        top: unset !important;
+                        transform: unset !important;
+                        left: unset !important;
+                        right: unset !important;
+                        bottom: unset !important;
+                        margin-bottom: 20px;
                     }
                     .col-lg-8 {
                         padding: 0;
                         img {
                             width: 100%;
-                        }
-                        .col-6 {
-                            padding: 0;
-                            &:nth-child(1),
-                            &:nth-child(3) {
-                                padding: 0px 7px 14px 0px;
-                            }
-                            &:nth-child(2),
-                            &:nth-child(4) {
-                                padding-left: 7px;
-                                padding-bottom: 14px;
-                            }
                         }
                     }
                     .col-lg-4 {
@@ -1538,15 +1543,19 @@
                             .img_caption1 {
                                 text-align: center;
                                 position: relative;
+                                width: 100%;
+                                margin-bottom: 20px;
                             }
                             img {
-                                width: 80%;
+                                width: 100%;
                             }
                             .img_caption2 {
-                                bottom: -10%;
-                                left: 21%;
+                                position: relative;
+                                top: unset;
+                                left: unset;
+                                width: 100%;
                                 img {
-                                    width: 92%;
+                                    width: 100%;
                                 }
                             }
                             .col-lg-5 {
@@ -1850,28 +1859,24 @@
                     .row_incubator {
                         flex-direction: column;
                     }
-                    .img_incubator_mobile {
-                        display: block;
+                    .img_incubator {
+                        position: relative !important;
                     }
-                    .img_incubator_desktop {
-                        display: none;
+                    .img_incubator1,
+                    .img_incubator2,
+                    .img_incubator3,
+                    .img_incubator4 {
+                        top: unset !important;
+                        transform: unset !important;
+                        left: unset !important;
+                        right: unset !important;
+                        bottom: unset !important;
+                        margin-bottom: 20px;
                     }
                     .col-lg-8 {
                         padding: 0;
                         img {
                             width: 100%;
-                        }
-                        .col-6 {
-                            padding: 0;
-                            &:nth-child(1),
-                            &:nth-child(3) {
-                                padding: 0px 7px 14px 0px;
-                            }
-                            &:nth-child(2),
-                            &:nth-child(4) {
-                                padding-left: 7px;
-                                padding-bottom: 14px;
-                            }
                         }
                     }
                     .col-lg-4 {
@@ -1894,15 +1899,21 @@
                             .img_caption1 {
                                 text-align: center;
                                 position: relative;
+                                width: 80%;
+                                margin-bottom: 20px;
                             }
                             img {
-                                width: 80%;
+                                width: 100%;
                             }
                             .img_caption2 {
-                                bottom: -10%;
-                                left: 21%;
+                                top: 10%;
+                                right: 0;
+                                width: 80%;
+                                div {
+                                    height: auto;
+                                }
                                 img {
-                                    width: 92%;
+                                    width: 100%;
                                 }
                             }
                             .col-lg-5 {
@@ -2172,13 +2183,17 @@
                     }
                     .col-lg-8 {
                         img {
-                            width: 86%;
+                            width: 100%;
                         }
                         .img_incubator2 {
-                            left: 47%;
+                            left: 43%;
                         }
                         .img_incubator3 {
                             right: -5%;
+                        }
+                        .img_incubator4 {
+                            top: 59%;
+                            width: 43%;
                         }
                     }
                 }
@@ -2447,10 +2462,14 @@
                             width: 100%;
                         }
                         .img_incubator2 {
-                            left: 47%;
+                            left: 43%;
                         }
                         .img_incubator3 {
-                            right: -2%;
+                            right: -5%;
+                        }
+                        .img_incubator4 {
+                            top: 63%;
+                            width: 43%;
                         }
                     }
                 }

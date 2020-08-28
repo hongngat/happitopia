@@ -1,20 +1,10 @@
 $(document).ready(function() {
 
-    $('#fullpage').fullpage({
-        navigation: true,
-        navigationPosition: 'right',
-        responsiveWidth: 1023,
-        autoScrolling: true,
-        scrollBar: true,
-        afterResponsive: function(isResponsive) {
 
-        },
+    //methods
 
-    });
     // scroll mouse
-    $('.scroll').click(function() {
-        $.fn.fullpage.moveSectionDown();
-    });
+
     //menu 
     $(window).load(function() {
         $('.open-menu').removeAttr('disabled');
@@ -98,8 +88,15 @@ $(document).ready(function() {
 
     };
 
-
-
+    //animation wow
+    wow = new WOW({
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: 0, // default
+        mobile: false, // default
+        live: true // default
+    })
+    wow.init();
 
 });
 
@@ -116,5 +113,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(selector).addEventListener(type, callback, false);
     }
 
+
+});
+$(document).on('click', '#scroll', function() {
+    fullpage_api.moveSectionDown();
+});
+
+var myFullpage = new fullpage('#fullpage', {
+    navigation: true,
+    navigationPosition: 'right',
+    scrollBar: true,
+    responsiveSlides: true,
+    responsiveWidth: 1023,
+    afterResponsive: function(isResponsive) {
+        if (isResponsive) {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
 
 });

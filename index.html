@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happitopia</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/fullpage.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.4.6/plyr.css">
+    <link rel="stylesheet" href="./assets/css/plyr.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
     <link rel="stylesheet" href="./assets/css/happitopia.css">
 </head>
 
@@ -26,7 +28,7 @@
             </div>
         </div>
         <div class="scroll_page">
-            <h2 class="scroll">scroll</h2>
+            <h2 id="scroll">scroll</h2>
             <div class="line3"></div>
         </div>
         <header id="header">
@@ -70,9 +72,9 @@
                 <div class="container">
                     <div class="col">
                         <div class="content_openning_page">
-                            <h5>happitopia academy</h5>
-                            <h2>Make Viet Nam Great.</h2>
-                            <h6>Vì Việt Nam. Do Việt Nam. Cho Việt Nam</h6>
+                            <h5 class="wow animate__animated animate__zoomIn">happitopia academy</h5>
+                            <h2 class="wow animate__animated animate__zoomIn animate__delay-1s">Make Viet Nam Great.</h2>
+                            <h6 class="wow animate__animated animate__zoomIn animate__delay-2s">Vì Việt Nam. Do Việt Nam. Cho Việt Nam</h6>
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,7 @@
                     </div>
                     <div class="content_about">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 wow animate__animated animate__slideInLeft">
 
                                 <h5>Hệ sinh thái</h5>
                                 <h5>“ khởi nghiệp hạnh phúc”</h5>
@@ -108,7 +110,7 @@
                                     <h6>/Xã hội hoàn hảo về mọi mặt, vùng đất ai cũng ước mơ đặt chân đến/</h6>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 wow animate__animated animate__zoomIn">
                                 <p>It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge Occidental es.</p>
                                 <p>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differ solmen in li grammatica, li pronunciation commun vocabules.
                                 </p>
@@ -326,17 +328,22 @@
                 <div class="container">
                     <div class="content_happitopia_hub">
                         <div class="col text-center">
-                            <h5>happitopia hub</h5>
-                            <h2>Make Your Workspace Your Own Muse.</h2>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                                kasd gubergren, </p>
-                            <video width="50%" controls crossorigin playsinline poster="./assets/img/bgr_video.jpg" id="player">
+                            <div class="wow animate__animated animate__zoomIn ">
+                                <h5>happitopia hub</h5>
+                                <h2>Make Your Workspace Your Own Muse.</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                                    kasd gubergren, </p>
+                            </div>
+                            <div class="wow animate__animated animate__fadeInUpBig animate__delay-.5s">
+                                <video width="50%" controls crossorigin playsinline poster="./assets/img/bgr_video.jpg" id="player">
                                     <source src="./assets/img/video.mp4" type="video/mp4" >
                                     <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
                                         default>
                                     <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
                                     <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
                                 </video>
+                            </div>
+
                         </div>
 
                     </div>
@@ -346,33 +353,30 @@
                 <div class="bgr"></div>
                 <div class="container">
                     <div class="row row_incubator">
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12 wow animate__animated animate__slideInLeft">
                             <img class="img-fluid" src="./assets/img/logo_in.png" alt="">
                             <p>Vườn ươm doanh nghiệp G2G Incubator được tạo ra với mong muốn ào tạo các doanh nhân trẻ, các start-up tìm ược thế mạnh, xây dựng ược triết lý và bản sắc văn hóa của bản thân, của doanh nghiệp mình, từ ó xác ịnh rõ phương
                                 pháp và con đường để i từ “Tốt” đến “Vĩ đại”.</p>
                             <a href="" class="btn-hover color-6">apply now</a>
                         </div>
-                        <div class="col-lg-8 col-md-12 img_incubator_mobile">
+
+                        <div class="col-lg-8 col-md-12  wow animate__animated animate__zoomIn">
                             <div class="row">
-                                <div class="col-6">
-                                    <img class="img-fluid" src="./assets/img/imgp1.png" alt="">
+                                <div class=" col-md-6 img_incubator img_incubator1 ">
+                                    <div><img class="img-fluid" src="./assets/img/imgp1.png" alt=""></div>
                                 </div>
-                                <div class="col-6">
-                                    <img class="img-fluid" src="./assets/img/imgp2.jpg" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid" src="./assets/img/imgp3.jpg" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid" src="./assets/img/imgp4.jpg" alt="">
+                                <div class="col-md-6 img_incubator img_incubator2 ">
+                                    <div><img class="img-fluid" src="./assets/img/imgp2.jpg" alt=""></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-8 col-md-12 img_incubator_desktop">
-                            <div class="img_incubator img_incubator1 "><img class="img-fluid" src="./assets/img/imgp1.png" alt=""></div>
-                            <div class="img_incubator img_incubator2 "><img class="img-fluid" src="./assets/img/imgp2.jpg" alt=""></div>
-                            <div class="img_incubator img_incubator3 "><img class="img-fluid" src="./assets/img/imgp3.jpg" alt=""></div>
-                            <div class="img_incubator img_incubator4 "><img class="img-fluid" src="./assets/img/imgp4.jpg" alt=""></div>
+                            <div class="row">
+                                <div class="col-md-6 img_incubator img_incubator3 ">
+                                    <div><img class="img-fluid" src="./assets/img/imgp3.jpg" alt=""></div>
+                                </div>
+                                <div class="col-md-6 img_incubator img_incubator4 ">
+                                    <div><img class="img-fluid" src="./assets/img/imgp4.jpg" alt=""></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -387,9 +391,9 @@
                             <h6><a href="">XEM THÊM</a></h6>
                         </div>
                     </div>
-                    <div class="content_caption">
+                    <div class="content_caption ">
                         <div class="row">
-                            <div class="col-lg-7">
+                            <div class="col-lg-7 wow animate__animated animate__zoomIn">
                                 <div class="img_caption1">
                                     <div><img class="img-fluid" src="./assets/img/imagec1.jpg" alt=""></div>
                                 </div>
@@ -397,7 +401,7 @@
                                     <div> <img class="img-fluid" src="./assets/img/image.jpg" alt=""></div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 wow animate__animated animate__slideInRight">
                                 <h5>“Hạ cánh” và “chắp cánh” các ý tưởng đột phá</h5>
                                 <p>Quỹ đầu tư khởi nghiệp Happitopia Capital có trị giá 5 triệu đô được tập trung ầu tư vào các công ty Start-ups trong nhiều lĩnh vực Y tế, Giáo dục, Nông nghiệp, Fintech, Hospitality, … Với giới start-up, gọi vốn thành
                                     công là một việc khó, ặc biệt nếu bạn mới chỉ có một ý tưởng,điều đó gần như là nhiệm vụ bất khả thi. </p>
@@ -418,7 +422,7 @@
                     </div>
                     <div class="content_news">
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 wow animate__animated animate__zoomIn">
                                 <div class="form_img">
                                     <a href=""><img class="img-fluid" src="./assets/img/new1.jpg" alt=""></a>
                                     <div class="title_news">
@@ -428,8 +432,8 @@
                                     <h5 class="category">bussiness</h5>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="form_img">
+                            <div class="col-lg-4 ">
+                                <div class="form_img wow animate__animated animate__fadeInRightBig animate__delay-.5s">
                                     <a href=""><img class="img-fluid" src="./assets/img/new2.jpg" alt=""></a>
                                     <div class="title_news">
                                         <h5><a href="">Happitopia Hub – cái nôi của doanh nghiệp “hạnh phúc”</a></h5>
@@ -437,7 +441,7 @@
                                     </div>
                                     <h5 class="category">Tech Finance</h5>
                                 </div>
-                                <div class="form_img">
+                                <div class="form_img wow animate__animated animate__fadeInRightBig animate__delay-1s">
                                     <a href=""> <img class="img-fluid" src="./assets/img/new3.jpg" alt=""></a>
                                     <div class="title_news">
                                         <h5><a href="">Happitopia Hub – cái nôi của doanh nghiệp “hạnh phúc”</a></h5>
@@ -460,7 +464,7 @@
                         </div>
                         <div class="content_contact">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 wow animate__animated animate__fadeInLeftBig">
                                     <h5>Let's Talks</h5>
                                     <img class="img-fluid line1" src="./assets/img/Line 4.png" alt="">
                                     <div class="flex ">
@@ -484,7 +488,7 @@
                                         <a href=""><i class="fab fa-google-plus-g"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 wow animate__animated animate__zoomIn ">
 
                                     <form>
 
@@ -524,12 +528,13 @@
         </div>
     </div>
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="./assets/js/jquery-1.8.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/fullpage.js"></script>
 <script src="./assets/js/sly.min.js"></script>
 <script src="./assets/js/slick.js"></script>
-<script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
+<script src="./assets/js/plyr.js"></script>
+<script src="./assets/js/wow.min.js"></script>
 <script src="./assets/js/happytopia.js"></script>
 
 </html>
